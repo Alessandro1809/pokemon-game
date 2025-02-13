@@ -1,8 +1,5 @@
-import PokemonGame from '@/modules/views/PokemonGame.vue';
 <template>
-  <div>
-    <PokemonGame />
-  </div>
+  <PokemonGame />
 </template>
 
 <script lang="ts" setup>

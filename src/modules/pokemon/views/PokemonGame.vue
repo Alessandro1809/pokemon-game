@@ -1,11 +1,14 @@
 <template>
-  <section v-if="false" class="flex flex-col justify-center items-center h-screen">
+  <section
+    v-if="false"
+    class="flex flex-col justify-center items-center h-screen background-pokemon"
+  >
     <h1 class="text-3xl">Espere por favor</h1>
     <h3 class="animate-pulse">cargando Pokemons</h3>
   </section>
 
   <section class="flex flex-col justify-center items-center h-screen">
-    <h1 class="m-5">Quien es ese Pokemon?</h1>
+    <h1 class="m-5 mb-24 text-5xl tracking-wider text-white">¿Quien es ese Pokemon?</h1>
     <!-- Pokemon picture -->
     <PokemonPicture />
 
@@ -18,6 +21,5 @@
 import GameOptions from '../components/GameOptions.vue';
 import PokemonPicture from '../components/PokemonPicture.vue';
 import { usePokemonGame } from '../composables/usePokemonGame';
-
 const { STATUS } = usePokemonGame();
 </script>

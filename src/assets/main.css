@@ -4,5 +4,21 @@
 
 html,
 body {
-  background-color: aqua;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: 'MiFuente';
+  src: url('@/assets/fonts/Pokemon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MiFuente', sans-serif;
 }
